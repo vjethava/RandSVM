@@ -1,0 +1,80 @@
+\section{SAMPLER Class Reference}
+\label{classSAMPLER}\index{SAMPLER@{SAMPLER}}
+{\tt \#include $<$sampler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{SAMPLER} (const ulong \&n, const size\_\-t \&d, const size\_\-t \&s)\label{classSAMPLER_d757e2d2ad76d516350d5f845600c191}
+
+\item 
+virtual const bool $\ast$ \textbf{ChooseSample} (const bool $\ast$)\label{classSAMPLER_e8fa741e4ba8587f9eb10cdca6799794}
+
+\item 
+virtual const bool $\ast$ \textbf{ChooseSample} (const bool $\ast$, const bool $\ast$)\label{classSAMPLER_88b4eb45319d006fb7c4f71a809094e5}
+
+\item 
+virtual void \textbf{UpdateWeights} (const bool $\ast$)\label{classSAMPLER_5a066988db0f52726fd0c3bf36b45159}
+
+\item 
+virtual void \textbf{GetWeights} (double $\ast$) const\label{classSAMPLER_bcd11490bd14a8ce5bae95783fb731f8}
+
+\item 
+ldouble \textbf{TotalWeight} () const\label{classSAMPLER_661ae82fdefecf638c8adb0c95695488}
+
+\item 
+ldouble \textbf{ViolatorsWeight} (const bool $\ast$) const \label{classSAMPLER_fe9aff53f151a781b7b608af59e8c5c8}
+
+\item 
+bool \textbf{DoUpdateWeights} (const bool $\ast$) const \label{classSAMPLER_185e9ee6815665e4a43f05290485b130}
+
+\item 
+void \textbf{SetSampleSize} (size\_\-t)\label{classSAMPLER_147b3e9eb27bfe27d7eceb504c6c249b}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+{\bf RND\_\-DISCRETE\_\-GENERAL} \textbf{rndgen}\label{classSAMPLER_1e91de1b82889bcd17b8bd0882be35a0}
+
+\item 
+{\bf RND\_\-DISCRETE\_\-GENERAL} \textbf{rndgen1}\label{classSAMPLER_57d986b05de57fcff7d779c8df885355}
+
+\item 
+ulong \textbf{no\_\-of\_\-variables}\label{classSAMPLER_4fe5a6bfdd10c8a1ae3f364d20ec4267}
+
+\item 
+size\_\-t \textbf{sample\_\-size}\label{classSAMPLER_dc15720ec2c1ea57d000e614e783d79d}
+
+\item 
+size\_\-t \textbf{no\_\-of\_\-constraints}\label{classSAMPLER_a105911bd2700f1bef3992c480153a3c}
+
+\item 
+bool $\ast$ \textbf{sampled\_\-constr}\label{classSAMPLER_98b98beda2cbc4c1bfadbc92e8a17742}
+
+\item 
+double $\ast$ \textbf{prev\_\-weights}\label{classSAMPLER_72ade2381bb7fcb367088717cb5dcfaf}
+
+\item 
+ldouble \textbf{total\_\-weight}\label{classSAMPLER_75a50a5c23b2cbc24bc14a2cdcd6e4c3}
+
+\end{CompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{CompactItemize}
+\item 
+static const int \textbf{scale} = 10000\label{classSAMPLER_c7d1967c0d4dbaca474be581e4bd631d}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Krishnan S \end{Desc}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+sampler.h\item 
+sampler.cpp\end{CompactItemize}

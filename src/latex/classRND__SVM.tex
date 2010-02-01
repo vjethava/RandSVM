@@ -1,0 +1,113 @@
+\section{RND\_\-SVM Class Reference}
+\label{classRND__SVM}\index{RND_SVM@{RND\_\-SVM}}
+{\tt \#include $<$rnd\_\-svm.h$>$}
+
+Inheritance diagram for RND\_\-SVM::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classRND__SVM}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{RND\_\-SVM} (const string, const ulong, const size\_\-t, const size\_\-t, const size\_\-t, double err, {\bf SAMPLER} \&, const string=\char`\"{}\char`\"{}, const string=\char`\"{}\char`\"{}, const string=\char`\"{}\char`\"{})\label{classRND__SVM_3c3642b0b6b946b6e897618749b0c0cd}
+
+\item 
+void \textbf{sortSVIndices} (ulong $\ast$, ulong)\label{classRND__SVM_6ac3b9bc3c953eb02d02ca9d09ad134b}
+
+\item 
+virtual void \textbf{LearnModel} ()\label{classRND__SVM_80aa9b843199c149c359f132a5d188ab}
+
+\item 
+virtual void \textbf{Solve} ()=0\label{classRND__SVM_5fb6b96cdfcc77e6386874ab93542604}
+
+\item 
+virtual size\_\-t \textbf{FindViolators} (const bool $\ast$)=0\label{classRND__SVM_0330c6934beb24038c1030d9e56b76b4}
+
+\item 
+void \textbf{print\_\-timing} (const string \&)\label{classRND__SVM_fb6f34b3c3614ba6333b3981a4efb079}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{WriteSampleFile} (const bool $\ast$)\label{classRND__SVM_ecdca7a3d1988a4cc733d88f91389048}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+{\bf SAMPLER} \& \textbf{s}\label{classRND__SVM_2eb0213fec205a4944c24f167bd1de95}
+
+\item 
+ulong \textbf{no\_\-of\_\-variables}\label{classRND__SVM_9329a0992dd6f3c20e5127bc6cf7e43d}
+
+\item 
+unsigned long long \textbf{memory\_\-size}\label{classRND__SVM_732caf93333e1ea61bc12acfe04d54a8}
+
+\item 
+size\_\-t \textbf{no\_\-of\_\-constraints}\label{classRND__SVM_1b47bb0c32f8fb0e984a081ad73688b1}
+
+\item 
+size\_\-t \textbf{k}\label{classRND__SVM_3f07db31b6084077538d8b72ba13838a}
+
+\item 
+size\_\-t \textbf{sample\_\-size}\label{classRND__SVM_1773f7c387ea3f64fcf5638f56a2db07}
+
+\item 
+size\_\-t \textbf{no\_\-of\_\-sv}\label{classRND__SVM_a2d670fd9518688af82fd9c45eaa5846}
+
+\item 
+size\_\-t \textbf{no\_\-of\_\-violators}\label{classRND__SVM_59d353c6befe0f2a919290d94580905a}
+
+\item 
+bool \textbf{use\_\-all\_\-avail\_\-mem}\label{classRND__SVM_a3fd7ddc02535a226288b1cfbc2c6967}
+
+\item 
+string \textbf{ifile}\label{classRND__SVM_a4838da23df5f3e07165ef89a0b1793b}
+
+\item 
+string \textbf{sfile}\label{classRND__SVM_9eb81213eb0649b2f3c43eac5da0b753}
+
+\item 
+string \textbf{sv\_\-file}\label{classRND__SVM_de60d0170d48ff6851f88a44580636c0}
+
+\item 
+string \textbf{weights\_\-file}\label{classRND__SVM_8a47362621df9365aedf834e0d6e03ce}
+
+\item 
+string \textbf{violators\_\-file}\label{classRND__SVM_de16716df887cf7dc5f05127b6464ed3}
+
+\item 
+string \textbf{classifier\_\-input\_\-file}\label{classRND__SVM_332574beed30f0cb74e13b512352d454}
+
+\item 
+double \textbf{err}\label{classRND__SVM_f56bacf4c57286ee44709ddb445a1555}
+
+\item 
+bool \textbf{solver\_\-failed}\label{classRND__SVM_2331c1cafe91b3deaf8128948cd77c41}
+
+\item 
+bool $\ast$ \textbf{violators}\label{classRND__SVM_de6040d5a57f53cdcd58507ad40b087c}
+
+\item 
+int $\ast$ \textbf{categories}\label{classRND__SVM_338834fe952951b447c48565677619e5}
+
+\item 
+bool $\ast$ \textbf{sv}\label{classRND__SVM_c8e3c813800c9a0339d91ab9ae149838}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Krishnan S \end{Desc}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+rnd\_\-svm.h\item 
+rnd\_\-svm.cpp\end{CompactItemize}

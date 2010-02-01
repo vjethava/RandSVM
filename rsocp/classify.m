@@ -1,0 +1,11 @@
+function [Viols, Acc, Margin] = classify(W, B, Yt, Xt)
+%% function [Viols, Acc, Margin] = classify(W, B, Yt, Xt)
+n = length(Yt); 
+d = size(Xt, 2); 
+Ys = Xt*W' + B; 
+Yp = sign(Ys); 
+Ysign = abs(sign(Yp - Yt)); 
+numWrong = nnz(Ysign); 
+Viols = Ysign; 
+Acc = 100.0 - (numWrong*100.0)/n;
+Margin = Ys-1.0;

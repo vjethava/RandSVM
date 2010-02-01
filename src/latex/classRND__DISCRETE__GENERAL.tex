@@ -1,0 +1,67 @@
+\section{RND\_\-DISCRETE\_\-GENERAL Class Reference}
+\label{classRND__DISCRETE__GENERAL}\index{RND_DISCRETE_GENERAL@{RND\_\-DISCRETE\_\-GENERAL}}
+{\tt \#include $<$rnd\_\-discrete\_\-general.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{RND\_\-DISCRETE\_\-GENERAL} (const size\_\-t)\label{classRND__DISCRETE__GENERAL_708ec640239e697b3e51ba2d0a5b78d5}
+
+\item 
+\textbf{RND\_\-DISCRETE\_\-GENERAL} (const size\_\-t, const double)\label{classRND__DISCRETE__GENERAL_681bd3b20cf2cdca91dbce8545d29a17}
+
+\item 
+\textbf{RND\_\-DISCRETE\_\-GENERAL} (const size\_\-t, const double $\ast$)\label{classRND__DISCRETE__GENERAL_73d0c3ca08021673231629b42fb8e67c}
+
+\item 
+virtual void \textbf{SetWeights} (const double $\ast$)\label{classRND__DISCRETE__GENERAL_f5f256b572a33b2be85d82a5a0ec09c0}
+
+\item 
+virtual void \textbf{UpdateWeight} (const size\_\-t indx, const double w)\label{classRND__DISCRETE__GENERAL_504bd9014e4ca541b061d7397f4cb738}
+
+\item 
+virtual double \textbf{Weight} (const size\_\-t indx) const \label{classRND__DISCRETE__GENERAL_84771904f4d7f66f55738823178fa31f}
+
+\item 
+virtual ulong \textbf{Get} ()\label{classRND__DISCRETE__GENERAL_52bd222c798b062ed3970d5b676e8ed2}
+
+\item 
+virtual void \textbf{UpdateGenerator} ()\label{classRND__DISCRETE__GENERAL_8c403bb39a5f2a268b503435dcc7d358}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+double $\ast$ \textbf{weights}\label{classRND__DISCRETE__GENERAL_38b0ce7466c61872374613269bdf9a1d}
+
+\item 
+double $\ast$ \textbf{tmp\_\-weights}\label{classRND__DISCRETE__GENERAL_a92e79805a843e005972d8e92f3c5963}
+
+\item 
+size\_\-t \textbf{k}\label{classRND__DISCRETE__GENERAL_5f07e56415d6fdc408731b767a16c7ed}
+
+\item 
+size\_\-t \textbf{next\_\-indx}\label{classRND__DISCRETE__GENERAL_9be40d95b9e58a7236fd0063d60579db}
+
+\item 
+size\_\-t $\ast$ \textbf{indx}\label{classRND__DISCRETE__GENERAL_b12cd353d354aeb7849fad3c06b625b8}
+
+\item 
+gsl\_\-ran\_\-discrete\_\-t $\ast$ \textbf{rndgen}\label{classRND__DISCRETE__GENERAL_aeaa2c6311ab434d879e96fed15819f8}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class for arbitrary discrete distributions
+
+\begin{Desc}
+\item[Author:]Krishnan S \end{Desc}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+rnd\_\-discrete\_\-general.h\item 
+rnd\_\-discrete\_\-general.cpp\end{CompactItemize}
